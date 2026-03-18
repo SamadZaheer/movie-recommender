@@ -75,7 +75,7 @@ except (KeyError, FileNotFoundError):
 
 all_titles = sorted(movie_data['title'].tolist())
 
-st.markdown("# 🎬 Movie Recommender")
+st.markdown('<h1 style="margin-bottom:0;">🎬 Movie Recommender</h1>', unsafe_allow_html=True)
 st.markdown('<p style="color:#8892b0;font-size:16px;margin-bottom:0;">Discover films you\'ll love — matched by cast, director, genre &amp; keywords.</p>', unsafe_allow_html=True)
 st.divider()
 
