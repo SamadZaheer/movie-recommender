@@ -1,0 +1,7 @@
+.streamlit/secrets.toml
+Movie Recommendation System copy/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+.ipynb_checkpoints/
