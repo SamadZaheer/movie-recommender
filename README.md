@@ -8,7 +8,9 @@ A content-based movie recommender app built with Streamlit. Pick any movie from 
 
 ## Screenshot
 
-*App Screenshot*
+![App Screenshot 1](images/screenshot1.png)
+
+![App Screenshot 2](images/screenshot2.png)
 
 ---
 
@@ -28,6 +30,15 @@ A content-based movie recommender app built with Streamlit. Pick any movie from 
 - **CountVectorizer** — converts every movie's soup into a numerical word-count vector, building a shared vocabulary across all 4,803 movies.
 - **Cosine similarity** — measures the angle between any two movie vectors; a score close to 1 means the movies share similar attributes, close to 0 means they don't.
 - **Precomputed matrix** — the full 4,803 × 4,803 similarity matrix is computed once by `precompute.py` and saved to disk, so the app can return recommendations instantly without any runtime computation.
+
+---
+
+## Dataset
+
+- `tmdb_5000_movies.csv` — movie metadata (title, genres, keywords, overview, vote average, vote count)
+- `tmdb_5000_credits.csv` — cast and crew information per movie
+- Source: [TMDB 5000 Movie Dataset](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata) on Kaggle
+- Size: 4,803 movies after merging the two files
 
 ---
 
